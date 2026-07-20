@@ -1,5 +1,11 @@
 # Дневник самочувствия — политика конфиденциальности
 
-Публичная страница для [RuStore](https://www.rustore.ru/). Исходный код приложения в этом репозитории **не** хранится.
+Публичная страница для карточки приложения в RuStore. Код приложения здесь не хранится.
 
-После включения GitHub Pages: https://slider540.github.io/headache-bp-privacy/
+После включения GitHub Pages откройте:
+
+**https://slider540.github.io/headache-bp-privacy/**
+
+## Pages
+
+Settings → Pages → Deploy from branch → `main` / `/` (root).
