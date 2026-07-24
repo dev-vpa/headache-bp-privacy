@@ -4,7 +4,7 @@
 
 После включения GitHub Pages откройте:
 
-**https://slider540.github.io/headache-bp-privacy/**
+**https://dev-vpa.github.io/headache-bp-privacy/**
 
 ## Pages
 
