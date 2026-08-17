@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Как читать отчёт – Дневник самочувствия</title>
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.5; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+    h1 { font-size: 1.4rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; }
+    .en { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #ddd; }
+    .meta { color: #555; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>Как читать отчёт из приложения</h1>
+  <p class="meta">Приложение «Дневник самочувствия» (Android). Для врача. Обновлено: 2026-08-17.</p>
+  <p>Пациент собрал этот файл на телефоне (раздел «Профиль») и отправил его вам. Это дневник самонаблюдения, а не заключение и не результат прибора.</p>
+  <p>Приложение <strong>не измеряет</strong> давление: цифры человек переписал с манжеты тонометра. Силу боли ставит сам, по шкале от 1 до 10.</p>
+
+  <h2>Что обычно стоит сверху</h2>
+  <ul>
+    <li>Подзаголовок «Отчёт для консультации».</li>
+    <li>Имя и возраст – только если пациент сам их вписал перед отправкой. В дневник на телефоне они не попадают.</li>
+    <li>Сколько записей вошло, выбранный период и дата сборки файла. Период задаёт пациент: это не обязательно весь дневник.</li>
+  </ul>
+
+  <h2>Блок «Коротко»</h2>
+  <p>Сводка по тем записям, которые вошли в файл.</p>
+  <ul>
+    <li><strong>Давление.</strong> Сколько полных замеров (есть и верхнее, и нижнее). «Обычно» – среднее арифметическое этих цифр, округлённое до целого. Рядом, если значения различались, – размах верхнего и нижнего.</li>
+    <li><strong>Головная боль.</strong> Сколько записей и самая сильная оценка из тех, что человек поставил (1–10).</li>
+    <li><strong>Лекарства.</strong> Названия, которые отметили рядом с записями, чаще встречающиеся – ближе к началу списка. Это не учёт приверженности и не назначение.</li>
+  </ul>
+
+  <h2>Графики</h2>
+  <p>Появляются, если в выбранном периоде есть подходящие точки. Одна точка – один календарный день на часах телефона пациента.</p>
+  <ul>
+    <li>Давление: линия – среднее за день; тонкая «палочка» – минимум и максимум, если замеров за день было несколько.</li>
+    <li>Боль: линия – самая сильная оценка за день; «палочка» – разброс за этот день.</li>
+    <li>Если между днями больше двух недель, линия не соединяется. Разрыв – пауза в записях, а не «всё было стабильно».</li>
+  </ul>
+
+  <h2>Таблица записей</h2>
+  <p>Колонки: дата, время, тип (головная боль или давление), показатели, подробности.</p>
+  <ul>
+    <li><strong>Давление:</strong> верхнее / нижнее, иногда пульс. «Как мерили» – поза, рука, обстановка, самочувствие, если человек это отметил.</li>
+    <li><strong>Головная боль:</strong> сила 1–10; начало и, если указано, конец и длительность; где и как ощущалась; симптомы, погода, сон, возможные поводы, еда и напитки – только то, что заполнено. Лекарство, доза, время приёма и «помогло ли» – как записал пациент. Внизу строки может быть свободная заметка.</li>
+  </ul>
+  <p>Пустое поле значит «не указано», а не «отрицает» и не «не было».</p>
+
+  <h2>Чего в файле нет</h2>
+  <ul>
+    <li>Диагноза, нормы и рекомендации приложения.</li>
+    <li>Автоматического замера давления телефоном.</li>
+    <li>Гарантии, что попали все приступы и все приёмы таблеток.</li>
+    <li>Копии у разработчика: файл собирается на устройстве и уходит только тем, кому пациент его отправил.</li>
+  </ul>
+  <p>Внизу файла написано: не является медицинским заключением. Для личного наблюдения и разговора с врачом.</p>
+  <p>Контакт разработчика: <a href="mailto:dev-vpa@yandex.ru">dev-vpa@yandex.ru</a></p>
+
+  <div class="en" lang="en">
+    <h2>How to read this report (EN)</h2>
+    <p class="meta">App “Health diary” (Android). For clinicians. Updated: 2026-08-17.</p>
+    <p>The patient built this file on their phone (Profile) and sent it to you. It is a self-observation diary, not a clinical report and not a device reading.</p>
+    <p>The app <strong>does not measure</strong> blood pressure: numbers are copied from a cuff. Pain intensity is the patient’s own 1–10 rating.</p>
+
+    <h2>Header</h2>
+    <ul>
+      <li>Subtitle: “Report for a consultation” (wording may follow the phone language).</li>
+      <li>Name and age appear only if the patient typed them before sharing. They are not stored in the on-phone diary.</li>
+      <li>Entry count, the period the patient chose (not necessarily the whole diary), and when the file was built.</li>
+    </ul>
+
+    <h2>Summary block (“In brief”)</h2>
+    <ul>
+      <li><strong>Blood pressure.</strong> Count of complete readings (systolic and diastolic both present). “Typical” is the arithmetic mean of those values, rounded to a whole number. If values varied, min–max for systolic and diastolic are shown.</li>
+      <li><strong>Headache.</strong> Number of headache entries and the highest 1–10 intensity the patient logged.</li>
+      <li><strong>Medicines.</strong> Names noted next to entries, more frequent names first. Not adherence tracking and not a prescription.</li>
+    </ul>
+
+    <h2>Charts</h2>
+    <p>Shown when the chosen period has points. One point is one calendar day on the patient’s phone clock.</p>
+    <ul>
+      <li>Blood pressure: the line is the day’s mean; a thin whisker is min–max if there were several readings that day.</li>
+      <li>Pain: the line is the day’s highest rating; the whisker is that day’s range.</li>
+      <li>A gap longer than two weeks is not joined by a line. A break is missing diary days, not “stable values”.</li>
+    </ul>
+
+    <h2>Entry table</h2>
+    <p>Columns: date, time, kind (headache or blood pressure), readings, details.</p>
+    <ul>
+      <li><strong>Blood pressure:</strong> systolic / diastolic, sometimes pulse. “How it was measured” may include posture, arm, setting, and how the person felt – if they filled those in.</li>
+      <li><strong>Headache:</strong> intensity 1–10; start and, if given, end and duration; location and quality; symptoms, weather, sleep, possible prompts, food and drink – only completed fields. Medicine, amount, time taken, and whether it helped – as the patient wrote. A free note may sit under the row.</li>
+    </ul>
+    <p>A blank field means “not given”, not “denied” and not “absent”.</p>
+
+    <h2>What the file does not contain</h2>
+    <ul>
+      <li>A diagnosis, reference ranges, or treatment advice from the app.</li>
+      <li>Blood pressure measured by the phone.</li>
+      <li>A guarantee that every attack or every dose was logged.</li>
+      <li>A copy held by the developer: the file is built on the device and goes only to people the patient shares it with.</li>
+    </ul>
+    <p>The footer states that this is not a medical conclusion. It is for personal observation and a conversation with a clinician.</p>
+    <p>Developer contact: <a href="mailto:dev-vpa@yandex.ru">dev-vpa@yandex.ru</a></p>
+  </div>
+</body>
+</html>
